@@ -323,7 +323,7 @@ class SforceBaseClient {
 		}
 		
 		
-		$this->sforce->__setSoapHeaders($header_array);
+		$this->sforce->__setSoapHeaders(array_filter($header_array));
 	}
 
 	public function setAssignmentRuleHeader($header) {
